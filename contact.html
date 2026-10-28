@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#20231c" />
+
+    <title>კონტაქტი | Khutorok City</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <section class="inner-hero contact-bg">
+        <div class="container">
+          <p class="eyebrow" data-i18n="contactEyebrow">კონტაქტი</p>
+
+          <h1 data-i18n="contactTitle">მოხარული ვიქნებით გიხილოთ</h1>
+
+          <p data-i18n="contactText">
+            დაგვიკავშირდით ან გამოგვიგზავნეთ მაგიდის დაჯავშნის მოთხოვნა.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div>
+            <p class="eyebrow" data-i18n="contactInfoEyebrow">გვიპოვეთ</p>
+
+            <h2 data-i18n="contactInfoTitle">მობრძანდით ჩვენთან</h2>
+
+            <div class="contact-line">
+              <small data-i18n="footerPhoneLabel"> ტელეფონი </small>
+
+              <a href="tel:+995574014554"> +995 574 014 554 </a>
+            </div>
+
+            <div class="contact-line">
+              <small data-i18n="footerAddressLabel"> მისამართი </small>
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=11+Vazha-Pshavela+Avenue+Tbilisi"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="footerAddress"
+              >
+                11 ვაჟა-ფშაველას გამზირი, თბილისი
+              </a>
+            </div>
+
+            <iframe
+              class="map"
+              title="Khutorok City-ის რუკა"
+              loading="lazy"
+              src="https://www.google.com/maps?q=11%20Vazha-Pshavela%20Avenue%2C%20Tbilisi&output=embed"
+            ></iframe>
+          </div>
+
+          <form id="bookingForm" class="booking">
+            <p class="eyebrow" data-i18n="bookingEyebrow">მაგიდის დაჯავშნა</p>
+
+            <h2 data-i18n="bookingTitle">დაგეგმეთ თქვენი ვიზიტი</h2>
+
+            <label for="guestName" data-i18n="formName"> სახელი </label>
+
+            <input
+              id="guestName"
+              name="name"
+              type="text"
+              required
+              autocomplete="name"
+            />
+
+            <label for="guestPhone" data-i18n="formPhone"> ტელეფონი </label>
+
+            <input
+              id="guestPhone"
+              name="phone"
+              type="tel"
+              required
+              autocomplete="tel"
+            />
+
+            <div class="form-row">
+              <div>
+                <label for="date" data-i18n="formDate"> თარიღი </label>
+
+                <input id="date" name="date" type="date" required />
+              </div>
+
+              <div>
+                <label for="time" data-i18n="formTime"> დრო </label>
+
+                <input id="time" name="time" type="time" required />
+              </div>
+            </div>
+
+            <label for="guests" data-i18n="formGuests">
+              სტუმრების რაოდენობა
+            </label>
+
+            <select id="guests" name="guests">
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7+</option>
+            </select>
+
+            <label for="note" data-i18n="formNote">
+              დამატებითი სურვილი (არასავალდებულო)
+            </label>
+
+            <textarea id="note" name="note" rows="3"></textarea>
+
+            <button
+              class="btn gold submit"
+              type="submit"
+              data-i18n="formSubmit"
+            >
+              WhatsApp-ით მოთხოვნის გაგზავნა
+            </button>
+
+            <p class="hint" data-i18n="formHint">
+              WhatsApp გაიხსნება შევსებული შეტყობინებით. დაჯავშნა დადასტურდება
+              რესტორნის პასუხის შემდეგ.
+            </p>
+
+            <p id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
